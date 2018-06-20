@@ -11,6 +11,7 @@ public class Fader : MonoBehaviour {
     private void Awake()
     {
         ren = GetComponent<MeshRenderer>();
+        ren.shadowCastingMode = UnityEngine.Rendering.ShadowCastingMode.TwoSided;
         FadeIn();
     }
 
